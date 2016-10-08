@@ -81,7 +81,7 @@ NodoA* Arbol::BusqRec(int ref, NodoA* aux)
 {
 	NodoA* Busque=aux;
 	NodoA* 	Res;
-	if(Busque->Puzzel==ref)
+	if(Busque->dato==ref)
 		return Busque;
 	if(Busque->Hijos.empty()) 
 		return NULL;
