@@ -1,11 +1,11 @@
 #include "Arbol.h"
 
-ArbolP::ArbolP(std::vector<char> orig)
+ArbolP::ArbolP(int orig)
 {
 	this->Raiz = new NodoA(orig);
 }
 
-bool ArbolP::AddNodo(std::vector<char> ref,std::vector<char> aux)
+bool ArbolP::AddNodo(int ref,int aux)
 {
 	if(this->Raiz==NULL)
 	{
@@ -27,7 +27,7 @@ bool ArbolP::AddNodo(std::vector<char> ref,std::vector<char> aux)
 	return true;
 }
 
-bool ArbolP::ElimNodo(std::vector<char> ref)
+bool ArbolP::ElimNodo(int ref)
 {
 	if (this->Raiz==NULL)
 	{
@@ -67,7 +67,7 @@ std::stack<NodoA*> ArbolP::Camino(NodoA* aux)
 	return Camino;
 }
 
-NodoA* ArbolP::BusqNodo(std::vector<char> ref)
+NodoA* ArbolP::BusqNodo(int ref)
 {
 	if(Raiz==NULL)
 	{
@@ -77,7 +77,7 @@ NodoA* ArbolP::BusqNodo(std::vector<char> ref)
 	return BusqRec(ref,Raiz);
 }
 
-NodoA* ArbolP::BusqRec(std::vector<char> ref, NodoA* aux)
+NodoA* ArbolP::BusqRec(int ref, NodoA* aux)
 {
 	NodoA* Busque=aux;
 	NodoA* 	Res;
