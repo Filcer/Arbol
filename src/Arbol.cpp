@@ -2,7 +2,7 @@
 
 ArbolP::ArbolP(int orig)
 {
-	this->Raiz = new NodoA(orig);
+	this->Raiz =new NodoA(orig);
 }
 
 bool ArbolP::AddNodo(int ref,int aux)
