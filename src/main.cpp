@@ -2,7 +2,7 @@
 
 int main()
 {
-	std::vector<char> o;
+	int o;
 	for (int i = 1; i < 9; ++i)
 	{
 		o.push_back(i);
@@ -18,7 +18,7 @@ int main()
 			std::cout<<(int)arbol.Raiz->Puzzel[i]<<std::endl;
 	}
 
-	std::vector<char> p;
+	int p;
 	p.push_back('*');
 	for (int i = 1; i < 9; ++i)
 	{
