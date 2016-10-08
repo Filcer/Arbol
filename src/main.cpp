@@ -1,4 +1,4 @@
-#include "ArbolP.h"
+#include "Arbol.h"
 
 int main()
 {

@@ -1,4 +1,4 @@
-#include "ArbolP.h"
+#include "Arbol.h"
 
 ArbolP::ArbolP(std::vector<char> orig)
 {
