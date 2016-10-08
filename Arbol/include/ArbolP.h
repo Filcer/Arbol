@@ -5,13 +5,13 @@
 class ArbolP
 {
 private:
-	NodoA* BusqRec(std::vector<char> ref, NodoA* aux);
+	NodoA* BusqRec(int ref, NodoA* aux);
 public:
 	NodoA* Raiz;
-	ArbolP(std::vector<char> orig);
-	NodoA* BusqNodo(std::vector<char> v);
-	bool AddNodo(std::vector<char> ref,std::vector<char> aux);
-	bool ElimNodo(std::vector<char> ref);
+	ArbolP(int orig);
+	NodoA* BusqNodo(int v);
+	bool AddNodo(int ref, int aux);
+	bool ElimNodo(int ref);
 	std::stack<NodoA*> Camino(NodoA* aux);
 
 };
