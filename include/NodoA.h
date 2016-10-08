@@ -4,9 +4,9 @@
 class NodoA
 {
 public:
-	std::vector<char> Puzzel;
-	std::vector<NodoA*> Hijos;
+	 Puzzel;
+	std::vector<NodoA*> Hijos; //esto es un vector con nodos
 	NodoA * Padre;
-	NodoA(std::vector<char> pzl);
-	NodoA(std::vector<char> pzl , NodoA* padre);
+	NodoA( int pzl);
+	NodoA(int pzl , NodoA* padre);
 };
