@@ -96,5 +96,12 @@ NodoA* Arbol::BusqRec(int ref, NodoA* aux)
 
 void Arbol::Imprimir()
 {
+	std::vector<NodoA*> aux;
+	NodoA* nodo = Raiz;
+	std::cout << "			" << nodo->dato << std::endl;
+	while (!nodo->Hijos.empty())
+	{
+		//No tengo ni puta idea
+	}
 	//TO DO...
 }
