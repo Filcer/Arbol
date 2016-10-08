@@ -1,12 +1,12 @@
 #include "NodoA.h"
 
-NodoA::NodoA(std::vector<char> pzl)
+NodoA::NodoA(int pzl)
 {
 	this->Puzzel = pzl;
 	this->Padre = NULL;
 }
 
-NodoA::NodoA(std::vector<char> pzl , NodoA* padre)
+NodoA::NodoA(int pzl , NodoA* padre)
 {
 	this->Puzzel = pzl;
 	this->Padre = padre;
