@@ -1,13 +1,13 @@
 #include "NodoA.h"
 
-NodoA::NodoA(int pzl)
+NodoA::NodoA(int dato)
 {
-	this->Puzzel = pzl;
+	this->Puzzel = dato;
 	this->Padre = NULL;
 }
 
-NodoA::NodoA(int pzl , NodoA* padre)
+NodoA::NodoA(int dato , NodoA* padre)
 {
-	this->Puzzel = pzl;
+	this->Puzzel = dato;
 	this->Padre = padre;
 }

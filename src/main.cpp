@@ -9,7 +9,7 @@ int main()
 	}
 	o.push_back('*');
 	
-	ArbolP arbol(o);
+	Arbol arbol(o);
 	for (int i = 0; i < arbol.Raiz->Puzzel.size() ; ++i)
 	{	
 		if(arbol.Raiz->Puzzel[i]=='*')

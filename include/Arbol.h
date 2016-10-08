@@ -1,13 +1,13 @@
 #include <stack>
 #include "NodoA.h"
 
-class ArbolP
+class Arbol
 {
 private:
 	NodoA* BusqRec(int ref, NodoA* aux);
 public:
 	NodoA* Raiz;
-	ArbolP(int orig);
+	Arbol(int orig);
 	NodoA* BusqNodo(int v);
 	bool AddNodo(int ref, int aux);
 	bool ElimNodo(int ref);

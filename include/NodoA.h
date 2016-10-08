@@ -4,9 +4,8 @@
 class NodoA
 {
 public:
-	 Puzzel;
 	NodoA* Hijos; //esto es un vector con nodos
 	NodoA * Padre;
-	NodoA( int pzl);
-	NodoA(int pzl , NodoA* padre);
+	NodoA(int dato);
+	NodoA(int dato , NodoA* padre);
 };
