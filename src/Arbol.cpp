@@ -96,12 +96,17 @@ NodoA* Arbol::BusqRec(int ref, NodoA* aux)
 
 void Arbol::Imprimir()
 {
-	std::vector<NodoA*> aux;
-	NodoA* nodo = Raiz;
-	std::cout << "			" << nodo->dato << std::endl;
-	while (!nodo->Hijos.empty())
+	if (Raiz == NULL)
 	{
-		//No tengo ni puta idea
+		cout << "El árbol está vacío" << endl;
 	}
-	//TO DO...
+	ImprimirRecursivo(Raiz);
+}
+
+int Arbol::ImprimirRecursivo(NodoA* nodo)
+{
+	if (!nodo->Hijos.empty())
+	{
+		
+	}
 }

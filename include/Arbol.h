@@ -12,7 +12,8 @@
 class Arbol
 {
   private:
-    NodoA *BusqRec(int ref, NodoA* aux);
+    NodoA* BusqRec(int ref, NodoA* aux);
+    int ImprimirRecursivo(NodoA* nodo);
 
   public:
     NodoA* Raiz;
